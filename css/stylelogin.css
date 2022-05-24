@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /** box-sizzing e border-box**/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center{
+    display: flex; /** display e flax**/
+    flex-wrap: wrap; /** flex-wrap e wrap**/
+    max-width: 1280px; /** masx-width**/
+    margin:0 auto; /** 0 e auto juntos**/
+    padding: 0 2%; /** 0 e 2% juntos **/
+
+}
+
+html,body{
+    height:100%;
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height:200px;
+    padding:20px 0;
+}
+
+.logo{
+    width:50%;
+
+}
+
+.menu{
+    padding-top:30px;
+    width: 50%;
+    text-align: right;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a{
+    color:black;
+    text-decoration:none;
+    font-weight: bold;
+    margin-right:15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu button{
+    border:0;
+    background-color:lightcoral;
+    color:black;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+}
+
+
+.menu button:hover{
+    border:0;
+    background-color:white;
+    color:lightcoral;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+}
+
+section.sobre{
+    height:calc(100% - 200px);
+    position:relative;
+
+}
+
+.extras{
+    position: absolute;
+    bottom:-450px;
+    right: -500px;
+    width: 1200px;
+    height:950px;
+    border-radius:50%;
+    background-color:lightcoral;
+}
+
+.social-media{
+    position: absolute;
+    left: 660px;
+    top:300px;
+}
+
+.social-media img{
+    display: block;
+    width: 20px;
+    margin: 20px 0;
+}
+
+
+
+
+/* TELA LOGIN */
+
+
+.login-box{
+    position: absolute;
+    top:30%;
+    left:3%;
+    width: 400px;
+    padding: 40px;
+    transform:translate(-50%, -50%);
+    background:lightblue;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px lightblue;
+    border-radius: 10px;
+}
+
+.longin-box h2{
+    margin: 0 0 30px;
+    padding:0;
+    color:white;
+    text-align: center;
+}
+
+.login-box .user-box{
+    position:relative;
+}
+
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:white;
+    margin-bottom:30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+
+}
+
+.login-box .user-box label{
+    position: absolute ;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size:16px;
+    color:black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top:-20px;
+    left:0;
+    color:lightcoral;
+    font-size: 12px;
+}
+
+.login-box form a{
+    position:relative;
+    display:inline-block;
+    padding: 10px 20px;
+    color:lightcoral;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.login-box a:hover{
+    background-color:lightcoral;
+    color: white;
+    border-radius: 5px;
+
+    box-shadow: 0 0 5px lightcoral,
+                0 0 25px lightcoral,
+                0 0 50px lightcoral,
+                0 0 100px lightcoral;
+
+}
+
+.login-box a span{
+    position: absolute;
+    display:block;
+}
+
+
+.login-box a span:nth-child(1) {
+    top:0;
+    left:0;
+    width: -100%;
+    height: 2px;
+    background:linear-gradient(90deg, transparent,lightcoral );
+    animation: btn-anim1 1s linear infinite;
+    
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left:-100%;
+    }
+    50%, 100%{
+        left:100%;
+    }
+}
+
+
+login-box a span:nth-child(2) {
+    top:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(180deg, transparent,lightcoral );
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+    
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top:-100%;
+    }
+    50%, 100%{
+        top:100%;
+    }
+}
+
+
+
+login-box a span:nth-child(3) {
+    bottom:0%;
+    right:-100;
+    width:100%;
+    height:2px;
+    background:linear-gradient(270deg, transparent,lightcoral );
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+    
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right:-100%;
+    }
+    50%, 100%{
+        right:100%;
+    }
+}
+
+
+login-box a span:nth-child(4) {
+    bottom:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(360deg, transparent,lightcoral );
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+    
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom:-100%;
+    }
+    50%, 100%{
+        bottom:100%;
+    }
+}
+
+
+
+
+
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:lightcoral;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:lightskyblue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid lightcoral;  /* creates padding around scroll thumb */
+  }

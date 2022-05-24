@@ -1,0 +1,101 @@
+<html>
+<head> 
+    <title> Makes pra você </title>
+    <link href="css/style05.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum=scale=1.0"><!-- meta name= viewport e content=width...  -->
+</head>
+<body style="overflow: auto;">
+    <header><!--header-->
+
+        
+ 
+        <div class="center">
+            <div class="logo">  <a href="makespravoce.html"> <img src="img/logo.png" width="90px"/> </a> </div> <!-- logo(vdo)-->
+            <div class=" menu"> 
+              
+            <a href="makespravoce02.html"><button> MAQUIAGEM</button> </a>
+            <a href="makespravoce03.html"><button> SKINCARE</button></a>
+            <a href="makespravoce04.html"><button> ACESSÓRIOS</button> </a>
+            <a href="paginalogin.html"><button> MINHA CONTA</button></a>
+            <a href="makespravoce05.html"><button> <img src="img/carrinho-carrinho.png" width="25px"/> </button> </a>
+           
+        </div><!--menu(vdo)-->
+        </div><!-- center(vdo) -->
+    </header>
+    <section class="sobre"> 
+        <div class="extras">
+        
+        
+            <div class="social-media">
+                <a href=""><img src="img/facebook.png" width="30px"/></a>
+                <a href=""><img src="img/twitter.png"  width="30px"/></a>
+                <a href=""><img src="img/instagram.png"width="30px"/></a>
+             
+            </div>
+        
+
+       
+        <div class="form">
+            <h2>Finalizar compra</h2>
+            <form action="url_para_enviar_dados_do_formulario" method="post">
+                <fieldset>
+
+                    <br>
+
+                    <h3>Endereço para entrega</h3>
+                    <br>
+                    <div class="input-duplo">
+                        <div>
+                            <label for="nome">Nome: <span>*</span></label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div>
+                            <label for="sobrenome">Sobrenome: <span>*</span></label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
+                    </div>
+                    <div class="input-simples">
+                        <div>
+                            <label for="endereco">Endereço: <span>*</span></label>
+                            <input type="text" name="endereco" id="endereco" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-duplo">
+                        <div>
+                            <label for="cep">CEP: <span>*</span></label>
+                            <input type="text" name="cep" id="cep" required>
+                        </div>
+                        <div>
+                            <label for="pais">País</label>
+                            <div class="select-wrapper">
+                                <select name="pais" id="pais" >
+                                    <option value="angola">Angola</option>
+                                    <option value="brasil">Brasil</option>
+                                    <option value="portugal">Portugal</option>
+                                    <option value="timor-leste">Timor-Leste</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Opção de envio</h3>
+                    <br>
+                    <div class="radio">
+                        <input type="radio" name="opcao-envio" id="normal" value="normal">
+                        <label for="normal">Normal</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="opcao-envio" id="expresso" value="expresso">
+                        <label for="expresso">Expresso</label>
+                    </div>
+                    <button type="submit">Finalizar</button>
+                </fieldset>
+            </form>
+        </div><!--form-->
+    </section>
+    
+
+           
+</body>
+</html>

@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /** box-sizzing e border-box**/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center{
+    display: flex; /** display e flax**/
+    flex-wrap: wrap; /** flex-wrap e wrap**/
+    max-width: 1280px; /** masx-width**/
+    margin:0 auto; /** 0 e auto juntos**/
+    padding: 0 2%; /** 0 e 2% juntos **/
+    
+}
+
+html,body{
+    height:100%;
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height:200px;
+    padding:20px 0;
+}
+
+.logo{
+    width:50%;
+
+}
+
+.menu{
+    padding-top:30px;
+    width: 50%;
+    text-align: right;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a{
+    color:black;
+    text-decoration:none;
+    font-weight: bold;
+    margin-right:15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu button{
+    border:0;
+    background-color:lightcoral;
+    color:black;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+}
+
+
+.menu button:hover{
+    border:0;
+    background-color:white;
+    color:lightcoral;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+}
+
+section.sobre{
+    height:calc(100% - 200px);
+    position:relative;
+
+}
+
+.base{
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 220px;
+
+
+}
+
+.extras{
+    position: absolute;
+    bottom:-450px;
+    right: -500px;
+    width: 1200px;
+    height: 950px;
+    border-radius:50%;
+    background-color:lightcoral;
+}
+
+.social-media{
+    position: absolute;
+    left: 660px;
+    top:300px;
+}
+
+.social-media img{
+    display: block;
+    width: 20px;
+    margin: 20px 0;
+}
+
+.texto-sobre{
+    margin-top:100px;
+    position: absolute;
+    left: 70px;
+    top: -150px;
+}
+
+.texto-sobre h1{
+    font-size:40px;
+}
+
+.texto-sobre p{
+    margin:20px 0;
+    color:black;
+    font-size:14px;
+    font-weight: bold;
+    max-width: 800px;
+
+}
+
+.texto-sobre button{
+    border:0;
+    background-color:lightcoral;
+    color:white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+
+}
+
+
+.btm_compra button:hover{
+    border:0;
+    background-color:white;
+    color:lightcoral;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+}
+
+
+.form button{
+    border:0;
+    background-color:lightblue;
+    color: black;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    left: 65px;
+
+}
+
+
+.form {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 180px;
+    left: 70px;
+}
+
+.cadastro {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+/*---*/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: lightblue;
+    color:black;
+    font-weight: bold;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: white;
+    color:lightblue;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    border: 2px solid black;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:lightcoral;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:lightskyblue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid lightcoral;  /* creates padding around scroll thumb */
+  }
+
